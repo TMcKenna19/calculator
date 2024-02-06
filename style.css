@@ -1,0 +1,84 @@
+.container {
+    background-color: rgb(43, 55, 89);
+    height: 650px;
+    width: 500px;
+    padding: 100px;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 1px;
+}
+
+.calculator {
+    background-color: rgb(151, 151, 151);
+    padding: 25px;
+    width: 375px;
+    height: 550px;
+    border: solid 5px white;
+    border-radius: 55px;
+}
+
+.number-pad {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  padding: 15px;
+  gap: 5px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.number {
+  font-family: 'Orbitron', sans-serif;
+  color: #000000;
+  background-color: #dbdbdb;
+  font-size: 25px;
+  padding: 10px;
+  margin: 15px;
+  width: 25px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  vertical-align: top;
+  box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
+  transition: 0.5s;
+}
+
+.clear {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    background-color: #d47332;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    width: 25px;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
+    transition: 0.5s;
+}
+
+.clear:hover {
+    background-color: #d16924; 
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+.number:hover {
+    background-color: #cbcbcb;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+/* add calulator font */
+.out-put {
+    font-family: 'Orbitron';
+    text-align: end;
+    padding: 9px;
+    border: 3px solid black;
+    color: #0bf5b3;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+}
