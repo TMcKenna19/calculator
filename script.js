@@ -1,14 +1,17 @@
 //selecting elements
-const numOne = [];
+const numOne = [document.querySelectorAll('number-pad.value')];
 const numTwo = [];
 // const logic 
 
-const seven = document.querySelector('.number-7')
 
+
+const seven = document.querySelector('.number-7');
 
 seven.addEventListener('click', function () {
-    console.log("7")
-})
+    console.log(numOne);
+});
+
+
 
 
 

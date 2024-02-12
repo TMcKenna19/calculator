@@ -3,7 +3,7 @@
     height: 650px;
     width: 500px;
     padding: 100px;
-    list-style-type: none;
+
 }
 
 ul {
@@ -21,34 +21,81 @@ ul {
     border-radius: 55px;
 }
 
-.number-pad {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  padding: 15px;
-  gap: 5px;
-  text-align: center;
-  margin-bottom: 3px;
+.buttons {
+    display: inline-block;
 }
 
-.number {
-  font-family: 'Orbitron', sans-serif;
-  color: #000000;
-  background-color: #dbdbdb;
-  font-size: 25px;
-  padding: 10px;
-  margin: 15px;
-  width: 25px;
-  border: 1.5px solid rgb(0, 0, 0);
-  border-radius: 15px;
-  vertical-align: top;
-  box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
-  transition: 0.5s;
+.number div {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    color: #000000;
+    background-color: #dbdbdb;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    width: 25px;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
+    transition: 0.5s;
 }
 
-.clear {
+.number div:hover {
+    background-color: #cbcbcb;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+.operators div {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    color: #000000;
+    background-color: #dbdbdb;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    width: 25px;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
+    transition: 0.5s;
+}
+
+.operators div:hover {
+    background-color: #cbcbcb;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+div.equal {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    color: #000000;
+    background-color: #1d8285;
+    font-size: 25px;
+    padding: 127px 10px;
+    vertical-align: top;
+    cursor: pointer;
+    margin: 10px 4px 10px 0;
+    width: 17%;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
+    transition: 0.5s;
+}
+
+div.equal:hover {
+    background-color: #168d92;;;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+#clear {
     font-family: 'Orbitron', sans-serif;
     color: #ffffff;
+    cursor: pointer;    
     background-color: #d47332;
     font-size: 25px;
     text-align: center;
@@ -62,22 +109,18 @@ ul {
     transition: 0.5s;
 }
 
-.clear:hover {
+#clear:hover {
     background-color: #d16924; 
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
 
-.number:hover {
-    background-color: #cbcbcb;
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
-}
 
-/* add calulator font */
-.out-put {
+.input {
     font-family: 'Orbitron';
+    font-size: 2.5rem;
     text-align: end;
+    height: 60px;
     padding: 9px;
-    border: 3px solid black;
     color: #0bf5b3;
     background-color: rgb(27, 27, 27);
     border-radius: 10px;
