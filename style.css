@@ -28,11 +28,12 @@ ul {
 .number div {
     display: inline-block;
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
     cursor: pointer;
     color: #000000;
     background-color: #dbdbdb;
     font-size: 25px;
-    padding: 10px;
+    padding: 20px;
     margin: 10px 4px 10px 0;
     width: 25px;
     border: 1.5px solid rgb(0, 0, 0);
@@ -50,6 +51,7 @@ ul {
 .operators div {
     display: inline-block;
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
     cursor: pointer;
     color: #000000;
     background-color: #dbdbdb;
@@ -72,13 +74,14 @@ ul {
 div.equal {
     display: inline-block;
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
     color: #000000;
     background-color: #1d8285;
     font-size: 25px;
     padding: 127px 10px;
     vertical-align: top;
     cursor: pointer;
-    margin: 10px 4px 10px 0;
+    margin: 90px 4px 16px 10px;
     width: 17%;
     border: 1.5px solid rgb(0, 0, 0);
     border-radius: 15px;
@@ -97,23 +100,12 @@ div.equal:hover {
     color: #ffffff;
     cursor: pointer;    
     background-color: #d47332;
-    font-size: 25px;
-    text-align: center;
-    padding: 10px;
-    margin: 15px;
-    width: 25px;
-    border: 1.5px solid rgb(0, 0, 0);
-    border-radius: 15px;
-    vertical-align: top;
-    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
-    transition: 0.5s;
 }
 
 #clear:hover {
     background-color: #d16924; 
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
-
 
 .input {
     font-family: 'Orbitron';
