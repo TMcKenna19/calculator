@@ -1,15 +1,8 @@
-//selecting elements
-const numOne = [document.querySelectorAll('number-pad.value')];
-const numTwo = [];
-// const logic 
+"use strict";
 
-
-
-const seven = document.querySelector('.number-7');
-
-seven.addEventListener('click', function () {
-    console.log(numOne);
-});
+function displayNumber(e) {
+    console.log(e)
+}
 
 
 

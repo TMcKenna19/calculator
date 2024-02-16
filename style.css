@@ -1,119 +1,67 @@
-.container {
-    background-color: rgb(43, 55, 89);
-    height: 650px;
-    width: 500px;
-    padding: 100px;
-
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 90%);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 1px;
+#calculator {
+    background-color: #1c1c1c;
+    border-radius: 25px;
+    max-width: 500px;
+    overflow: hidden;
 }
 
-.calculator {
-    background-color: rgb(151, 151, 151);
-    padding: 25px;
-    width: 375px;
-    height: 550px;
-    border: solid 5px white;
-    border-radius: 55px;
-}
-
-.buttons {
-    display: inline-block;
-}
-
-.number div {
-    display: inline-block;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    cursor: pointer;
-    color: #000000;
-    background-color: #dbdbdb;
-    font-size: 25px;
+#display {
+    /* font-family: 'Orbitron'; */
+    width: 100%;
     padding: 20px;
-    margin: 10px 4px 10px 0;
-    width: 25px;
-    border: 1.5px solid rgb(0, 0, 0);
-    border-radius: 15px;
-    vertical-align: top;
-    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
-    transition: 0.5s;
+    font-size: 5rem;
+    border: none;
+    text-align: left;
+    color: whitesmoke;
+    background-color: #1c1c1c;
 }
 
-.number div:hover {
-    background-color: #cbcbcb;
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
 }
 
-.operators div {
-    display: inline-block;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
+button {
+    /* font-family: 'Orbitron'; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    font-size: 3rem;
+    background-color: hsl(0, 0%, 31%);
+    color: #d4d4d4;
+    font-weight: bold;
     cursor: pointer;
-    color: #000000;
-    background-color: #dbdbdb;
-    font-size: 25px;
-    padding: 10px;
-    margin: 10px 4px 10px 0;
-    width: 25px;
-    border: 1.5px solid rgb(0, 0, 0);
-    border-radius: 15px;
-    vertical-align: top;
-    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
-    transition: 0.5s;
 }
 
-.operators div:hover {
-    background-color: #cbcbcb;
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+button:hover{
+    background-color: hsl(0, 0%, 40%);;
 }
 
-div.equal {
-    display: inline-block;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    color: #000000;
-    background-color: #1d8285;
-    font-size: 25px;
-    padding: 127px 10px;
-    vertical-align: top;
-    cursor: pointer;
-    margin: 90px 4px 16px 10px;
-    width: 17%;
-    border: 1.5px solid rgb(0, 0, 0);
-    border-radius: 15px;
-    vertical-align: top;
-    box-shadow: 0 4px 8px 0 rgb(57, 57, 57);
-    transition: 0.5s;
+button:active {
+    background-color: hsl(0, 0%, 50%);
 }
 
-div.equal:hover {
-    background-color: #168d92;;;
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+.operator-btn{
+    color: white;
+    background-color: hsl(35, 100%, 50%);
 }
 
-#clear {
-    font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
-    cursor: pointer;    
-    background-color: #d47332;
+.operator-btn:hover{
+    background-color:  hsl(35, 100%, 55%);
 }
 
-#clear:hover {
-    background-color: #d16924; 
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
-}
-
-.input {
-    font-family: 'Orbitron';
-    font-size: 2.5rem;
-    text-align: end;
-    height: 60px;
-    padding: 9px;
-    color: #0bf5b3;
-    background-color: rgb(27, 27, 27);
-    border-radius: 10px;
+.operator-btn:active {
+    background-color: hsl(35, 100%, 65%);
 }
