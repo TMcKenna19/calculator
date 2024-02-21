@@ -1,10 +1,10 @@
-body {
+/* body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 70%);
 }
 
 #calculator {
@@ -15,8 +15,8 @@ body {
 }
 
 #display {
-    /* font-family: 'Orbitron'; */
-    width: 100%;
+    font-family: 'Orbitron';
+    width: 450px;
     padding: 20px;
     font-size: 5rem;
     border: none;
@@ -33,7 +33,7 @@ body {
 }
 
 button {
-    /* font-family: 'Orbitron'; */
+    font-family: 'Orbitron';
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -79,4 +79,108 @@ button:active {
 
 .operator-btn:active {
     background-color: hsl(35, 100%, 65%);
+} */
+
+body {
+    background-color: var(--backing);
+    zoom: 80%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+
+.container {
+    background-color: var(--calc-bdy);
+    padding-top: 150px;
+    padding-right: 5px;
+    border-radius: 45px;
+    width: 410px;
+    height: 600px;
+    margin-top: 46px;
+    margin-right: -5px;
+    position: absolute;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+    margin-left: -5px;
+}
+
+.display p {
+    color: var(--text-white);
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    margin: 0;
+    padding: 0 15px 0 0;
+}
+
+.btn {
+    border-radius: 50%;
+    border-style: none;
+    font-size: 34px;
+    width: 83px;
+    height: 83px;
+    margin: 5px;
+}
+
+.btn.grey {
+    color: #000000;
+    margin-left: 10px;
+    background-color: var(--btn-grey);
+}
+
+.btn.grey:hover {
+    background-color: var(--btn-grey-hover);
+}
+
+.btn.number, .btn.decimal {
+    color: var(--text-white);
+    margin-left: 10px;
+    background-color: var(--btn-number);
+}
+
+.btn.number:hover, .btn.decimal:hover {
+    background-color: var(--btn-number-hover);
+}
+
+.operator {
+    color: var(--text-white);
+    margin-left: 10px;
+    background-color: var(--operator-org);
+}
+
+.operator:hover {
+    background-color: var(--operator-hover);
+}
+
+#zero {
+    border-radius: 50px;
+    width: 180px;
+}
+
+#zero p {
+    text-align: left;
+    margin-top: 23px;
+    margin-left: 27px;
+}
+
+:root {
+    --backing: #dcdcdc;
+    --calc-bdy: #1c1c1c;
+    --btn-grey: #d4d4d2;
+    --btn-grey-hover: #c8c8c8;
+    --btn-number: #505050;
+    --btn-number-hover: #575757;
+    --operator-org: #ff9500;
+    --operator-hover: #ffad32;
+    --text-white: #e5e5e5;
 }
